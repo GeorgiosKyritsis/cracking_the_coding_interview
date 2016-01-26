@@ -1,0 +1,14 @@
+package chapter1;
+
+import java.util.Arrays;
+
+public class palindrome {
+
+	public static boolean isPalindrome(String str)
+	{
+		str = str.toLowerCase();
+		char[] charArray = str.toCharArray();
+		Arrays.sort(charArray);
+		
+	}
+}

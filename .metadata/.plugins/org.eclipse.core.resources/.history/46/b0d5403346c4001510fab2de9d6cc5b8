@@ -1,0 +1,15 @@
+package chapter1;
+
+public class permutation {
+	
+	public static boolean isPermutation(String str1, String str2)
+	{
+		char[] s = new char[str1.length() + str2.length()];
+		str1 = str1.toLowerCase();
+		str2 = str2.toLowerCase();
+		str1.getChars(0, str1.length(), s, 0);
+		str2.getChars(0, str1.length(), s, str1.length());
+		return true;
+	}
+
+}

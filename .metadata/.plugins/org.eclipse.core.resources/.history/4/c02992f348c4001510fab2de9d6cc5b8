@@ -1,0 +1,25 @@
+package chapter1;
+
+public class tester {
+
+	public static void main(String[] args) {
+		
+		//Question 1
+		String str1 = "George";
+		String str2 = "monopoly";
+		String str3 = "Mario";
+		
+		System.out.println("Is the word: " + str1 + " unique? " + uniqueCharacters.isUnique(str1));
+		System.out.println("Is the word: " + str2 + " unique? " + uniqueCharacters.isUnique(str2));
+		System.out.println("Is the word: " + str3 + " unique? " + uniqueCharacters.isUnique(str3));
+
+		//Question 2
+		String str4 = "George";
+		String str5 = "monopoly";
+		String str6 = "Polymono";
+		
+		System.out.println("Is permutation? " + permutation.isPermutation(str4, str5));
+		System.out.println("Is permutation? " + permutation.isPermutation(str5, str6));
+	}
+
+}

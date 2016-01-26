@@ -1,0 +1,13 @@
+package chapter1;
+
+public class permutation {
+	
+	public static boolean isPermutation(String str1, String str2)
+	{
+		char[] s = new char[str1.length() + str2.length()];
+		str1 = str1.toLowerCase();
+		str2 = str2.toLowerCase();
+		str.getChars(0, str.length(), s, 0);
+	}
+
+}

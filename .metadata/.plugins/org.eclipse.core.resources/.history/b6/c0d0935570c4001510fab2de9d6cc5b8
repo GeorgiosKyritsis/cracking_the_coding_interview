@@ -1,0 +1,29 @@
+package chapter1;
+
+public class stringCompression {
+	
+	public static String compress(String str)
+	{
+		char[] c = str.toCharArray();
+		int counter = 1;
+		char temp = 'A';
+		String ans = "";
+		int index = 0;
+		
+		for (int i = 0; i < c.length; i++)
+		{
+			if (i % 2 == 0)
+			{
+				temp = c[i];
+			}
+			if (c[i] == temp)
+			{
+				
+			}
+			
+			
+		}
+		return ans;
+	}
+
+}

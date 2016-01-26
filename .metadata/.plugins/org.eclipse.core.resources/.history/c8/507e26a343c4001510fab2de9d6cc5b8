@@ -1,0 +1,12 @@
+package chapter1;
+
+public class uniqueCharacters {
+	
+	String str = "george";
+	
+	for(char s: str)
+	{
+		
+	}
+
+}

@@ -1,0 +1,15 @@
+package chapter1;
+
+public class permutation {
+	
+	public static boolean isPermutation(String str1, String str2)
+	{
+		char[] charArray1 = str1.toCharArray();
+		char[] charArray2 = str2.toCharArray();
+		
+		
+
+		return true;
+	}
+
+}

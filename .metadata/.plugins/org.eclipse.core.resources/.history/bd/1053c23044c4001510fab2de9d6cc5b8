@@ -1,0 +1,13 @@
+package chapter1;
+
+public class uniqueCharacters {
+	
+	
+	public static boolean isUnique(String str)
+	{
+		char[] s = new char[str.length()];
+		str.getChars(0, str.length(), s, 0);
+		
+	}
+	
+}
