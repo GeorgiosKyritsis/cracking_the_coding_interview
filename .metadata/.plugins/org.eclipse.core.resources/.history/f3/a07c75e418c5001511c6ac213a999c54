@@ -1,0 +1,23 @@
+package chapter2;
+
+public class DoublyLinkedList {
+	
+	private class Node 
+	{
+		Node prev = null;
+		Node next = null;
+		int data = 0;
+	}
+	
+	private Node head;
+	private Node tail;
+	private int size;
+	
+	public DoublyLinkedList()
+	{
+		new Node();
+	}
+	
+	public void 
+
+}

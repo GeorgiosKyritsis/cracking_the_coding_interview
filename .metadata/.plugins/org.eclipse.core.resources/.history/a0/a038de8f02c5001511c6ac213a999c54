@@ -1,0 +1,34 @@
+package chapter1;
+
+public class zeroMatrix {
+	
+	public static int[][] zero(int[][] mat)
+	{
+		int[][] zeroCoord = findZeros(mat);
+		
+		
+	}
+
+	private static int[][] findZeros(int[][] mat) {
+		
+		int[] indexX = new int[mat.length + 1];
+		int[] indexY = new int[mat[0].length + 1];
+		
+		for (int i = 0; i < indexX.length; i++)
+			indexX[i] = indexX.length;
+		
+		int[] indexY = new int[mat[0].length + 1];
+		
+		for (int j = 0; j < indexY.length; j++)
+			indexY[j] = indexY.length;
+		
+		for (int i = 0; i < mat.length; i++)
+		{
+			for (int j = 0; j < mat[0].length; j++)
+			{
+				if()
+			}
+		}
+	}
+
+}

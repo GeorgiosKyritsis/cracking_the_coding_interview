@@ -1,0 +1,80 @@
+package chapter2;
+
+public class DoublyLinkedList {
+	
+	private class Node 
+	{
+		Node prev = null;
+		Node next = null;
+		int data = 0;
+	}
+	
+	private Node head;
+	private int size;
+	
+	public DoublyLinkedList()
+	{
+		head = new Node();
+		size = 0;
+	}
+	
+	public void add (int e)
+	{
+		
+		Node first = head.next;
+		Node newNode = new Node();
+		newNode.data = e;
+		newNode.prev = head;
+		newNode.next = first;
+		head.next = newNode;
+		
+		first.prev = newNode;
+		
+		
+		size++;
+	}
+	
+	public void remove()
+	{
+		if (size == 0)
+			return;
+		else
+		{
+			head = head.next;
+			size--;
+		}
+	}
+	
+	public boolean contains(int e)
+	{
+		Node temp = head;
+		
+		if(size == 0)
+			return false;
+		
+		do
+		{
+			if (temp.data == e)
+				return true;
+			else
+				temp = temp.next;
+		} while (temp.next != null);
+		
+		return false;
+	}
+	
+	public void printList()
+	{
+		Node temp = head;
+		
+		if(size == 0)
+			return;
+		
+		do
+		{
+			System.out.println(temp.data);
+			temp = temp.next;
+		} while (temp.next != null);
+	}
+
+}

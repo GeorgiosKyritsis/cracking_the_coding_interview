@@ -1,0 +1,14 @@
+package chapter2;
+
+public class SinglyTest {
+
+	public static void main(String[] args) {
+		SinglyLinkedList ls = new SinglyLinkedList();
+		ls.add(10);
+		ls.add(20);
+		ls.add(30);
+		ls.printList();
+
+	}
+
+}

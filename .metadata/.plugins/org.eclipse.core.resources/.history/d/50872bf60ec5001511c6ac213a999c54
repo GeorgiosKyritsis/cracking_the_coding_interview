@@ -1,0 +1,27 @@
+package chapter2;
+
+public class SinglyLInkedList {
+	
+	private class Node 
+	{
+		Node next = null;
+		int data;
+	}
+	
+	Node head;
+	int size = 0;
+	
+	public SinglyLinkedList()
+	{
+		Node head = new Node(); 
+	}
+	
+	public void add(Node n)
+	{
+		if (size == 0)
+			head = n;
+		else
+			head.next = n;
+	}
+
+}

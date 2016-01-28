@@ -1,0 +1,19 @@
+package chapter2;
+
+public class Tester {
+
+	public static void main(String[] args) {
+		SinglyLinkedList ls = new SinglyLinkedList();
+		ls.add(1);
+		ls.add(2);
+		ls.add(30);
+		ls.add(111);
+		ls.remove();
+		ls.add(40);
+		ls.printList();
+		
+		System.out.println(ls.size);
+
+	}
+
+}

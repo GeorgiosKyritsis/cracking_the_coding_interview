@@ -1,7 +1,5 @@
 package chapter1;
 
-import java.util.Arrays;
-
 public class oneAway {
 	
 	public static boolean isOneAway(String str1, String str2)

@@ -1,0 +1,13 @@
+package chapter2;
+
+public class RemoveDuplicates {
+	
+	public static void removeDuplicates (SinglyLinkedList l)
+	{
+		while(l.next() != null)
+		{
+			
+		}
+	}
+
+}

@@ -44,6 +44,62 @@ public class tester {
 		
 		//Question 6
 		System.out.println(stringCompression.compress("aabddccddcccaaaf"));
+		
+		//Question 7
+		int [][] matrix = new int[][]{
+            {1,2,3,4},
+            {5,6,7,8},
+            {9,0,1,2},
+            {3,4,5,6}};
+            
+        int[][] a = MatrixRotation.rotate(matrix);
+        
+        for (int i = 0; i < a.length; i++) {
+            for (int j = 0; j < a[0].length; j++) {
+                System.out.print(a[i][j] + " ");
+            }
+            System.out.print("\n");
+        }
+        
+        System.out.println();
+        
+        //Question 8
+        int [][] matrix2 = new int[][]{
+            {1,2,3,0},
+            {5,6,7,8},
+            {9,0,1,2},
+            {3,4,5,6}};
+        
+       int[][] a2 = zeroMatrix.zero(matrix2);
+       
+       for (int i = 0; i < a2.length; i++) {
+           for (int j = 0; j < a2[0].length; j++) {
+               System.out.print(a2[i][j] + " ");
+           }
+           System.out.print("\n");
+       }
+       
+       System.out.println();
+      
+       //Question 9
+		String str10 = "waterbottle";
+		String str11 = "erbottlewat";
+		String str12 = "trbottlewae";
+		String str13 = "bottlewater";
+		
+		
+		System.out.println("Is rotation? " + StringRotation.isRotation(str10, str11));
+		System.out.println("Is rotation? " + StringRotation.isRotation(str11, str12));
+		System.out.println("Is rotation? " + StringRotation.isRotation(str11, str13));
+		
+		
+		
+		
+		
 	}
+	
+	
+
+	
 
 }

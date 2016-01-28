@@ -1,0 +1,16 @@
+package chapter2;
+
+import java.util.HashSet;
+
+public class RemoveDuplicates {
+	
+	public static void removeDuplicates (SinglyLinkedList l)
+	{
+		HashSet <Integer> set = new HashSet<Integer> ();
+		while(l.next() != null)
+		{
+			if ()
+		}
+	}
+
+}

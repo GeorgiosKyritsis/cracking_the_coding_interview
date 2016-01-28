@@ -1,0 +1,80 @@
+package chapter2;
+
+import java.util.Iterator;
+
+public class SinglyLinkedList implements Iterable<Integer>{
+	
+	private class Node {
+		Node next = null;
+		int data = 0;
+		
+		public Node() {
+			data = 0;
+			next = null;
+		}
+		
+		public Node(int e) {
+			data = e;
+			next = null;
+		}
+		
+		public Node(int e, Node next) {
+			data = e;
+			this.next = next;
+		}	
+	}
+	
+	//instance variables
+	private Node header;
+	private int length;
+	
+	public SinglyLinkedList() {
+		header = new Node();
+		header.next = null;
+		length = 0;
+	}
+	
+	public SinglyLinkedList(int e) {
+		header= new Node();
+		header.next = new Node(e);
+		length = 1;
+	}
+	
+	public void add(int e) {
+		if(length == 0)
+		{
+			Node newNode = new Node(e);
+			header.next = newNode;
+		}
+		else
+		{
+			Node firstNode = header.next;
+			Node newNode = new Node(e, firstNode);
+			header.next = newNode;
+			length++;
+		}
+		
+	}
+	
+	public void delete() {
+		if(length == 0) {
+			return;
+		}
+		else
+		{
+			Node firstNode = header.next;
+			header.next = firstNode.next;
+			length--;
+		}
+		
+	}
+	
+	
+	@Override
+	public Iterator<Integer> iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+}

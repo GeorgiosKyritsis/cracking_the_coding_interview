@@ -1,0 +1,12 @@
+package chapter2;
+
+public class DoublyLinkedList {
+	
+	private class Node 
+	{
+		Node prev = null;
+		Node next = null;
+		data = 0;
+	}
+
+}
