@@ -1,7 +1,5 @@
 package chapter2;
 
-import java.util.Iterator;
-
 public class DoublyTest {
 
 	public static void main(String[] args) {
@@ -12,40 +10,18 @@ public class DoublyTest {
 		ls.addFirst(10);
 		ls.addLast(10);
 		ls.addLast(100);
-		System.out.println(ls.contains(100));
+		ls.addFirst(10);
+		ls.addFirst(3);
+		ls.addLast(3);
+		ls.addLast(4);
+		ls.addFirst(3);
+		ls.addFirst(3);
+		ls.addFirst(3);
 		ls.printList();
+		ls.removeDuplicates();
 		System.out.println();
-		System.out.println("Iterable");
+		ls.printList();
 		
-		Iterator<Integer> it = ls.iterator();
-		
-		for(int i: ls)
-		{
-			System.out.println(i);
-		}
-		System.out.println();
-		System.out.println("Iterator");
-		
-		
-		while(it.hasNext()) {
-			System.out.println(it.next());
-		}
-		
-		ls.removeFirst();
-		
-		System.out.println();
-		for(int i: ls)
-		{
-			System.out.println(i);
-		}
-
-		ls.removeLast();
-		
-		System.out.println();
-		for(int i: ls)
-		{
-			System.out.println(i);
-		}
 
 	}
 

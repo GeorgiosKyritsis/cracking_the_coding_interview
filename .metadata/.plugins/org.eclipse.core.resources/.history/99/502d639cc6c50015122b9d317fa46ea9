@@ -1,0 +1,19 @@
+package chapter2;
+
+import java.util.Iterator;
+
+public class DoublyTest {
+
+	public static void main(String[] args) {
+
+		DoublyLinkedList ls = new DoublyLinkedList();
+		ls.addFirst(1);
+		ls.addFirst(2);
+		ls.addFirst(10);
+		ls.addLast(10);
+		ls.addLast(100);
+		ls.printList();
+
+	}
+
+}

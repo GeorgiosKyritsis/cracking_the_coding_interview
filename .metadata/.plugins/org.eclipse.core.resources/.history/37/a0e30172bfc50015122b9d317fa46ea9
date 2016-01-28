@@ -1,0 +1,26 @@
+package chapter2;
+
+import java.util.HashSet;
+import java.util.LinkedList;
+
+public class removeDuplicates {
+	
+	public void removeDups(LinkedList<Integer> ls) {
+		
+		int index = 0;
+		HashSet<Integer> hs = new HashSet<Integer> ();
+		
+		for (int i: ls)
+		{
+			if (hs.contains(i))
+			{
+				ls.remove(index);
+			}
+			else
+			{
+				hs.add(i);
+			}
+			index++;
+		}
+	}
+}

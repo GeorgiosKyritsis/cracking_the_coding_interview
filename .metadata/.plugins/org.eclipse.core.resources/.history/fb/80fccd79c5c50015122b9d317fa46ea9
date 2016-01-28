@@ -1,0 +1,29 @@
+package chapter2;
+
+import java.util.HashSet;
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class removeDuplicates {
+	
+	public static void removeDups(LinkedList ls) {
+		
+		Integer nextElement = 0;
+		HashSet<Integer> hs = new HashSet<Integer> ();
+		
+		Iterator<Integer> it = ls.listIterator();
+		
+		while(it.hasNext())
+		{
+			nextElement = (Integer) it.next();
+			if (hs.contains(nextElement))
+			{
+				it.remove();
+			}
+			else
+			{
+				hs.add(nextElement);
+			}
+		}
+	}
+}

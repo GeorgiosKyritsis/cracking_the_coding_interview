@@ -1,0 +1,51 @@
+package chapter2;
+
+public class SinglyTest {
+
+	public static void main(String[] args) {
+		SinglyLinkedList ls = new SinglyLinkedList();
+		ls.add(10);
+		ls.add(20);
+		ls.add(30);
+		ls.add(40);
+		ls.add(50);
+		ls.add(30);
+		ls.add(10);
+		ls.add(10);
+		ls.add(50);
+		ls.add(10);
+		ls.add(10);
+		ls.add(10);
+		ls.add(10);
+		ls.printList();
+		System.out.println();
+		SinglyLinkedList ls2 = ls.partition(15);
+		System.out.println();
+		ls2.printList();
+		System.out.println();
+		
+		ls.deleteMiddleNode();
+		ls.printList();
+		System.out.println();
+		ls.removeDuplicates();
+		ls.printList();
+		System.out.println();
+		ls.printKthFromLastElement(2);
+		System.out.println();
+		ls.deleteMiddleNode();
+		ls.printList();
+		
+		SinglyLinkedList ls4 = new SinglyLinkedList();
+		ls4.add(6);
+		ls4.add(1);
+		ls4.add(7);
+		
+		SinglyLinkedList ls5 = new SinglyLinkedList();
+		ls5.add(2);
+		ls5.add(9);
+		ls5.add(5);
+		
+		
+	}
+
+}

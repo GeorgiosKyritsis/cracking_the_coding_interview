@@ -1,5 +1,6 @@
 package chapter2;
 
+import java.util.HashSet;
 import java.util.Iterator;
 
 public class DoublyLinkedList implements Iterable<Integer>{
@@ -124,6 +125,29 @@ public class DoublyLinkedList implements Iterable<Integer>{
 			} while (temp.next != null) ;
 		}
 		return false;
+	}
+	
+	//Remove duplicates
+	public void removeDuplicates() {
+		HashSet<Integer> hs = new HashSet<Integer> ();
+		Node temp = header.next;
+		
+		while(temp != null)
+		{
+			if (hs.contains(temp.data))
+			{
+				temp.previous.next = temp.next;
+				temp.next.previous = temp.previous;
+				temp = temp.next;
+				length--;
+			}
+			else
+			{
+				hs.add(temp.data);
+				temp = temp.next;
+			}
+		}
+		
 	}
 	
 	public void printList() {
